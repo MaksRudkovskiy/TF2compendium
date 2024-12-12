@@ -5,8 +5,8 @@
         </a>
 
         <nav>
-            
-            <a href="">
+
+            <a href="{{ route('register') }}">
                 Регистрация
             </a>
 
