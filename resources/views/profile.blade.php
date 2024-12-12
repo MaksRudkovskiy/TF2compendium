@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('title')
-    Главная
+    Профиль
+@endsection
+
 @section('content')
 
     
