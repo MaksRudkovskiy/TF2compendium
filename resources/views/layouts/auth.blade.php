@@ -19,6 +19,10 @@
 
         <main>
 
+            <a href="{{route('main')}}" class="w-auto">
+                <img src="{{asset('content/img/logo.png')}}" alt="" class="max-w-12">
+            </a>
+
             @yield('content')
 
         </main>

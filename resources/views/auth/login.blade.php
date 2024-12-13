@@ -35,12 +35,7 @@
                         value="Войти">
                 </div>
             </form>
-            <form method="GET" action="{{ route('yandex') }}">
-                @csrf
-                <button class="w-full h-12 border-2 border-black rounded-lg text-2xl">
-                    Вход по Яндекс ID
-                </button>
-            </form>
+            
         </div>
     </div>
 @endsection
