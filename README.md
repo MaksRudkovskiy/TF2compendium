@@ -16,3 +16,4 @@
 - Данные от админа Логин: `admin@mail.ru` Пароль: `668822`
 
 цветовая палитра: https://colorkit.co/palette/ffe7d7-ffc7a0-ffa666-ff8e47-ff731c/
+Discontinued
