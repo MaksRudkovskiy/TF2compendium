@@ -1,0 +1,5 @@
+icon color: #EBE3CB
+header: #131313
+bg: #141414
+block: #0E0E0E
+bg-bg color: #1D1C1A
