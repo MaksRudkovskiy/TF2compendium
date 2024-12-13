@@ -1,43 +1,22 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
     content: [
-      "./resources/**/*.blade.php",
-      "./resources/**/*.js",
-      "./resources/**/*.vue",
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.vue',
     ],
-    darkMode: 'class',
+
     theme: {
-      extend: {
-        backgroundColor: {
-            'ffe7d7': '#ffe7d7',
-            'ffc7a0': '#ffc7a0',
-            'ffa666': '#ffa666',
-            'ff8e47': '#ff8e47',
-            'ff731c': '#ff731c'
+        extend: {
+            fontFamily: {
+                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
         },
-        colors: {
-          custom: {
-            'ffe7d7': '#ffe7d7',
-            'ffc7a0': '#ffc7a0',
-            'ffa666': '#ffa666',
-            'ff8e47': '#ff8e47',
-            'ff731c': '#ff731c'
-          }
-        },
-        hover: {
-          'C1CFFF': '#C1CFFF',
-          '4D52BC': '#4D52BC',
-        },
-        transitionDuration: {
-          '0.5s': '0.5s',
-          '0.3s': '0.3s',
-        },
-        border: {
-          '4D52BC': '#4D52BC',
-        }
-      },
     },
-    
-    
-  }
+
+    plugins: [forms],
+};
